@@ -1,0 +1,63 @@
+<header class="header">
+  <div class="container">
+    <div class="header__row">
+      <nav class="header__manu manu">
+        <div class="manu__body">
+          <ul class="manu__list">
+            <li class="manu__item">
+              <a class="manu__link active" href="#" data-goto=".page-section1">Home</a>
+            </li>
+            <li class="manu__item">
+              <a class="manu__link" href="http://localhost:3000/catalog.html" data-goto=".page-section1">Catalog</a>
+            </li>
+            <li class="manu__item">
+              <a class="manu__link" href="http://localhost:3000/product.html" data-goto=".page-section1">Product</a>
+              <span class="manu__arrow"></span>
+              <ul class="manu__sub-list">
+                <li class="manu__sub-item">
+                  <a class="manu__sub-link" href="#">manu__sub-link1</a>
+                </li>
+                <li class="manu__sub-item">
+                  <a class="manu__sub-link" href="#">manu__sub-link1</a>
+                </li>
+                <li class="manu__sub-item">
+                  <a class="manu__sub-link" href="#">manu__sub-link1</a>
+                </li>
+              </ul>
+            </li>
+            <li class="manu__item">
+              <a class="manu__link" href="#" data-goto=".page-section1">Blog</a>
+            </li>
+            <li class="manu__item">
+              <a class="manu__link" href="#" data-goto=".page-section1">Page</a>
+            </li>
+          </ul>
+        </div>
+        <div class="manu__icon">
+          <span></span>
+        </div>
+      </nav>
+      <a class="header__logo" href="#"><img src="images/main-logo.png" alt="" /></a>
+      <ul class="header__actions header-actions">
+        <li class="header-actions__item">
+          <form class="header-actions__search-form search-form">
+            <button class="search-form__btn">
+              <svg><use xlink:href="images/icons/icons.svg#search"></use></svg>
+            </button>
+          </form>
+        </li>
+        <li class="header-actions__item">
+          <a class="header-actions__link" href="#">
+            <svg><use xlink:href="images/icons/icons.svg#user"></use></svg>
+          </a>
+        </li>
+        <li class="header-actions__item header-actions__item_basket" data-da=".manu__body,900,last">
+          <a class="header-actions__link header-actions__link_basket" href="#">
+            <svg><use xlink:href="images/icons/icons.svg#basket"></use></svg>
+          </a>
+          <span class="header-actions__quantity">3</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

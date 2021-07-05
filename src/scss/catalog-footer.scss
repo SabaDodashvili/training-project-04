@@ -1,0 +1,129 @@
+.catalog-footer {
+  &__top {
+    border-top: solid 1px #eeeeee;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 767px) {
+      padding: 20px 0;
+    }
+  }
+
+  &__list {
+    @media (max-width: 992px) {
+      flex: 0 1 50%;
+      justify-content: center;
+    }
+    @media (max-width: 767px) {
+      flex: 0 1 100%;
+    }
+  }
+  &__item {
+    margin: 0 45px;
+    @media (max-width: 1175px) {
+      margin: 0 20px;
+    }
+    @media (max-width: 992px) {
+      margin: 0 0 0 20px;
+      white-space: nowrap;
+    }
+    @media (max-width: 767px) {
+      margin: 0 5px;
+      white-space: nowrap;
+      .returns-policy__link {
+        font-size: 11px;
+      }
+    }
+  }
+  &__socials {
+    @media (max-width: 992px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 767px) {
+      flex: 0 1 100%;
+      margin: 0 0 30px 0;
+      justify-content: center;
+      .socials-icons__link_catalog {
+        margin: 0 20px;
+      }
+    }
+  }
+
+  &__selects {
+    @media (max-width: 992px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 767px) {
+      flex: 0 1 100%;
+      justify-content: center;
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  &__select-wrapper {
+    margin: 0 0 0 60px;
+    font-family: 'Jost';
+    font-size: 13px;
+    font-weight: 500;
+    color: #858585;
+    @media (max-width: 1175px) {
+      margin: 0 0 0 30px;
+    }
+    @media (max-width: 992px) {
+      margin: 30px 30px 0 0;
+    }
+    @media (max-width: 767px) {
+      margin: 30px 20px 0 20px;
+    }
+    @media (max-width: 500px) {
+      margin: 30px 10px 0 10px;
+      font-size: 12px;
+    }
+  }
+
+  &__select {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__rights {
+    font-family: 'Jost';
+    font-size: 13px;
+    font-weight: 500;
+    color: $font_color_1;
+    @media (max-width: 767px) {
+      padding: 10px 0 0 0;
+    }
+  }
+
+  &__payments-variants {
+    @media (max-width: 767px) {
+      padding: 10px 0 0 0;
+      & svg {
+        margin: 0 15px;
+      }
+    }
+    & svg {
+      height: 30px;
+      width: 30px;
+      margin: 0 0 0 25px;
+    }
+  }
+}

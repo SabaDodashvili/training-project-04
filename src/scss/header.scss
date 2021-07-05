@@ -1,0 +1,121 @@
+.header {
+  position: absolute;
+  min-width: 100%;
+  top: 35px;
+  left: 0;
+  z-index: 1000;
+  &_product {
+    top: 25px;
+  }
+  &_catalog {
+    top: 70px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 26px;
+  }
+
+  &__manu {
+  }
+
+  &__logo {
+    width: 155px;
+    height: 50px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 900px) {
+      width: 150px;
+    }
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__actions {
+  }
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  transform: translateY(-1.5px);
+  &__item {
+    max-height: 16px;
+    padding: 0 12.5px;
+    position: relative;
+    @media (max-width: 900px) {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0 10px;
+    }
+  }
+  &__item_basket {
+    @media (max-width: 900px) {
+      display: inline-block;
+      padding: 0 13px;
+    }
+  }
+  &__search-form {
+    max-height: 16px;
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    & svg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  &__link_basket {
+    height: 17px;
+    width: 17px;
+    @media (max-width: 900px) {
+      height: 27px;
+      width: 27px;
+    }
+    & svg {
+    }
+  }
+  &__quantity {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+    padding: 3px 5px;
+    background-color: $font_color_1;
+    border-radius: 50%;
+  }
+}
+.search-form {
+  &__btn {
+    transform: translateY(-3px);
+    position: relative;
+    height: 16px;
+    width: 16px;
+    & svg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+}

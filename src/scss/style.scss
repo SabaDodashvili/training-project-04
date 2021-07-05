@@ -1,0 +1,50 @@
+// ========================================= V A R I A B L E =====================================================
+
+$maxWidth: 0;
+$minWidth: 0;
+$maxWidthContainer: 1850px;
+$maxWidthContainer2: 1356px;
+
+$font_color_1: #151515;
+$font_color_2: #454545;
+$font_color_3: #000;
+
+$color_1: #dadad8;
+$color_2: #eae5e0;
+$color_3: #f8f8f8;
+
+// ========================================= V A R I A B L E S ===================================================
+
+// ========================================= I M P O R T   S T Y L E S ===========================================
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'nullStyle.scss';
+@import 'forms.scss';
+@import 'icons.scss';
+@import 'shablons.scss';
+@import 'blocks.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'home.scss';
+@import 'catalog.scss';
+@import 'catalog-footer.scss';
+@import 'product.scss';
+// ========================================= I M P O R T   S T Y L E S ==========================================
+
+// ===================================== C O N T A I N E R  &  W R A P P =======================================
+.wrapper {
+  overflow: hidden;
+}
+.container {
+  min-height: 100%;
+  max-width: $maxWidthContainer;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  &_narrow {
+    max-width: $maxWidthContainer2;
+  }
+}
+.page {
+}
+// ===================================== C O N T A I N E R  &  W R A P P E R ====================================

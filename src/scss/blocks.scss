@@ -1,0 +1,289 @@
+.fullscreen {
+  min-height: 100vh;
+  height: 1px;
+  .container {
+    height: 1px;
+  }
+}
+.welcome {
+  &__slider {
+  }
+}
+.breadcrumbs {
+  margin: 0 0 60px 0;
+  @media (max-width: 767px) {
+    overflow-x: auto;
+    margin: 0 0 40px 0;
+  }
+  &_product {
+    margin: 0;
+    .breadcrumbs__list::after {
+      display: none;
+    }
+  }
+  &__list {
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #eeeeee;
+    }
+  }
+
+  &__item {
+    margin: 0 35px 0 0;
+    position: relative;
+    &:last-child {
+      margin: 0;
+      &::after {
+        content: none;
+      }
+    }
+    &::after {
+      content: '/';
+      position: absolute;
+      top: 2px;
+      right: -17.5px;
+      color: #858585;
+    }
+  }
+
+  &__link {
+    font-family: 'Jost';
+    font-size: 10px;
+    font-weight: 500;
+    color: #858585;
+    text-transform: uppercase;
+    &_current {
+      color: $font_color_1;
+    }
+  }
+}
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  &_catalog {
+    margin: 0 0 30px 0;
+  }
+}
+.products-item {
+  padding: 0 15px;
+  margin: 0 0 30px 0;
+  &_catalog {
+    flex: 0 1 50%;
+  }
+  &:hover &__image {
+    background-color: #d7d7d7;
+  }
+  &:hover &__price {
+    display: none;
+  }
+  &:hover &__hover-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__image {
+    display: block;
+    height: 429px;
+    background-color: $color_3;
+    margin: 0 0 25px 0;
+    transition: 0.3s background-color ease 0s;
+    position: relative;
+    &_catalog {
+      height: 224px;
+    }
+    & img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+  }
+
+  &__marker {
+  }
+
+  &__name {
+    font-family: 'Jost';
+    font-size: 13px;
+    font-weight: 500;
+    color: $font_color_2;
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+    &_catalog {
+      font-size: 10px;
+    }
+  }
+  &__price {
+    display: block;
+    font-family: 'Jost';
+    font-size: 14px;
+    font-weight: 700;
+    color: $font_color_1;
+    &_catalog {
+      font-size: 11px;
+    }
+  }
+  &__old-price {
+    color: #b4b4b4;
+    text-decoration: line-through;
+    font-weight: 500;
+  }
+  &__add-btn {
+    font-family: 'Jost';
+    font-size: 14px;
+    font-weight: 700;
+    color: $font_color_1;
+    &_catalog {
+      font-size: 9px;
+    }
+  }
+  &__hover-items {
+    display: none;
+    max-height: 14px;
+    &_catalog {
+      max-height: 11px;
+    }
+  }
+
+  &__hover-icons {
+    display: flex;
+  }
+
+  &__search-icone {
+    height: 12px;
+    width: 12px;
+    margin: 0 20px 0 0;
+    &_catalog {
+      height: 8px;
+      width: 8px;
+    }
+  }
+
+  &__heart-icone {
+    margin: 0 20px 0 0;
+    height: 12px;
+    width: 12px;
+    &_catalog {
+      height: 8px;
+      width: 8px;
+    }
+  }
+}
+.returns-policy {
+  display: flex;
+
+  &__item {
+    @media (max-width: 767px) {
+      margin: 0 20px;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    font-family: 'Jost';
+    font-size: 13px;
+    font-weight: 700;
+    color: #151515;
+  }
+}
+.socials-icons {
+  display: flex;
+
+  &__link {
+    margin: 0 20px;
+    &_catalog {
+      margin: 0 30px 0 0;
+    }
+  }
+  & svg {
+    height: 22px;
+    width: 22px;
+  }
+  &__twitter {
+    transition: 0.3s;
+    body.mouse &:hover {
+      fill: #00acee;
+    }
+  }
+
+  &__facebook {
+    transition: 0.3s;
+    body.mouse &:hover {
+      fill: #4267b2;
+    }
+  }
+
+  &__instagram {
+    transition: 0.3s;
+    body.mouse &:hover {
+      fill: #bc2a8d;
+    }
+  }
+
+  &__pinterest {
+    transition: 0.3s;
+    body.mouse &:hover {
+      fill: #e60023;
+    }
+  }
+}
+.product-marker {
+  position: relative;
+  font-family: 'Jost';
+  font-size: 10px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 12px 0;
+  padding: 0 0 0 15px;
+  &_catalog {
+    font-size: 9px;
+  }
+  & svg {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+.quantity {
+  position: relative;
+  border: solid 1px #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
+  &__minus-btn {
+    font-size: 22px;
+    color: #858585;
+  }
+
+  &__input {
+    font-family: 'Jost';
+    font-size: 13px;
+    font-weight: 700;
+    color: $font_color_1;
+    text-align: center;
+    width: 100%;
+    input {
+      text-align: center;
+    }
+  }
+
+  &__plus-btn {
+    font-size: 22px;
+    color: #858585;
+  }
+}
